@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jevelin - Modern Home Decor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  
+
+<header>
+    <div class="navbar">
+      <a href="#" class="logo"><img src="img/Jevelin_logo_dark.png" alt=""></a>
+
+      <ul class="desktop-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Decor</a></li>
+        <li><a href="#">Plant</a></li>
+        <li><a href="#">Light</a></li>
+        <li><a href="#">Chair</a></li>
+      </ul>
+
+      <div class="header-right">
+          <div class="drawer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="hamburger" id="hamburgerBtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sliding Drawer & Overlay -->
+  <div class="mobile-menu-overlay" id="overlay"></div>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Jevelin</span>
+      <div class="close-btn" id="closeBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+
+    <ul class="drawer-links">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Shop</a></li>
+  <li><a href="#">Decor</a></li>
+  <li><a href="#">Plant</a></li>
+  <li><a href="#">Light</a></li>
+  <li><a href="#">Chair</a></li>
+  <li><a href="#">About Us</a></li>
+</ul>
+
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge" >New collection</span>
+      <h3 class="hero-title">Fill your home  uniqueness</h3>
+      <p class="hero-subtitle">Huge variety with modern glamour!</p>
+      <br>
+      <p>Expoler ></p>
+    </div>
+
+    <div class="hero-image-container">
+      
+    </div>
+  </section>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const overlay = document.getElementById('overlay');
+
+    function openMenu() {
+      mobileDrawer.classList.add('active');
+      overlay.classList.add('active');
+    }
+
+    function closeMenu() {
+      mobileDrawer.classList.remove('active');
+      overlay.classList.remove('active');
+    }
+
+    hamburgerBtn.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+  </script>
+  
+ <center><p>! Use discount code: FIRSTIME to get <span style="color: orange;"> 10% off </span> your first order !</p></center>
+
+    <section class="section2">
+        <div class="card card1">
+            <button>New Collection</button>
+            <div class="te">
+                <h2>Lights <br> & Decor</h2>
+                <p>Show More ></p>
+            </div>
+        </div>
+
+        <div class="card card2">
+    
+            <div class="te">
+                <h2>Kitchen <br> Cutlery</h2>
+                <p>Show More ></p>
+            </div>
+        </div>
+
+        <div class="card card3">
+            <button style="background-color: orangered;">Sale</button>
+            <div class="te">
+                <h2>Living <br> Room</h2>
+                <p>Show More ></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer">
+        <div class="offer-img">
+            <img src="img/4.jfif" alt="Plant Offer">
+        </div>
+
+        <div class="offer-text">
+            <p>Our special offer</p>
+            <h2>Featured products with <br>amazing  color variety <br>for your home</h2>
+            <button>Purchase</button>
+        </div>
+    </section>
+ <br><br>
+
+    <section class="service">
+        <div class="box">
+            <i class="fa-regular fa-clock"></i>
+            <h3>24h Shipping</h3>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Curabitur <br> leo felis, consectetur id elit id.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Free Returns</h3>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Curabitur <br> leo felis, consectetur id elit id.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-regular fa-credit-card"></i>
+            <h3>100% Money Back</h3>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Curabitur <br> leo felis, consectetur id elit id.</p>
+        </div>
+    </section>
+
+    <section class="inspiration">
+        <h1>Ideas for inspiration</h1>
+        <div class="gallery">
+            <div class="item">
+                <img src="img/5.jfif" alt="Inspiration 1">
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+
+            <div class="item">
+                <img src="img/6.jfif" alt="Inspiration 2">
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="store-section">
+    <div class="store-content">
+        <h2>Find the closest store to your location</h2>
+        <p>
+            Quisque ut aliquam nunc, at finibus ante. Sed dignissim,
+            nulla a fermentum egestas, odio
+        </p>
+    </div>
+
+    <button class="store-btn">Find now</button>
+</section>
+<br>
+<section class="products-section">
+  <h2 class="section-title">Great deals for<br>great prices</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&q=80&w=600" alt="Table succulent plant">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h2 class="product-title">Table succulent plant</h2>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=600" alt="Metallic sidetable lamp">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Metallic sidetable lamp</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" alt="Wooden picture frame">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Wooden picture frame</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <br>
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=600" alt="Bedroom mirror">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Bedroom mirror</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        
+<img src="img/3.avif" alt="">      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Minimalistic chair</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&q=80&w=600" alt="Cactus succulent plant">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Cactus succulent plant</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&q=80&w=600" alt="Decorative pillow">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Decorative pillow</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9?auto=format&fit=crop&q=80&w=600" alt="Metallic table lamp">
+      </div>
+      <div class="product-details">
+        <div class="info">
+            <br>
+          <h3 class="product-title">Metallic table lamp</h3>
+          <span class="price">£5.00</span>
+        </div>
+        <button class="cart-btn" aria-label="Add to cart">  
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br><br><br><br>
+  <section class="newsletter">
+    <div class="container">
+       <center> <h2>Join the newsletter</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris</p></center>
+        <br>
+        <br>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Please enter your email here...">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+<br><br><br><br><br><br>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>PAYMENT METHOD</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+            </p>
+
+            <div class="cards">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/JCB_logo.svg" alt="">
+            </div>
+
+            <span><i class="fa-solid fa-lock"></i> Secure online payment</span>
+
+        </div>
+
+
+        <div class="footer-box">
+            <h3>TOP RATED</h3>
+
+            <div class="product">
+                <img src="https://picsum.photos/80?1" alt="">
+                <div>
+                    <h4>Table succulent plant</h4>
+                    <strong>£5.00</strong>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/80?2" alt="">
+                <div>
+                    <h4>Metallic sidetable lamp</h4>
+                    <strong>£5.00</strong>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://picsum.photos/80?3" alt="">
+                <div>
+                    <h4>Wooden picture frame</h4>
+                    <strong>£5.00</strong>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer-box">
+            <h3>SHOPPING GUIDE</h3>
+
+            <ul>
+                <li>FAQ</li>
+                <li>Shipment</li>
+                <li>Returns</li>
+                <li>Policies</li>
+                <li>Gift cards</li>
+                <li>Clothing care</li>
+                <li>Purchase conditions</li>
+            </ul>
+
+        </div>
+
+
+        <div class="footer-box">
+            <h3>COMPANY</h3>
+
+            <ul>
+                <li>About us</li>
+                <li>Press</li>
+                <li>Our team</li>
+                <li>Offices</li>
+                <li>Affiliates</li>
+                <li>Giveaway</li>
+                <li>Contact</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        Copyright © 2020 JevelinTheme - Theme by Shufflehound
+    </div>
+
+</footer>
+
+</body>
+</html>
